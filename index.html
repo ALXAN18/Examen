@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¡ALERTA DE VIRUS!</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="warning" class="warning">
+        <h1>¡ALERTA DE VIRUS!</h1>
+        <p>El sistema está siendo infectado...</p>
+    </div>
+    <button id="startButton">Iniciar alerta de virus</button>
+
+    <audio id="audio" src="sonido-raro.mp3" loop></audio>
+
+    <div id="popup" class="popup">
+        <img src="virus-image.png" alt="Imagen de Virus" class="popup-image">
+        <button onclick="closePopup()">Cerrar</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
