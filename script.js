@@ -3,6 +3,19 @@ let popupTemplate = document.getElementById('popup');
 let warning = document.getElementById('warning');
 
 
+document.addEventListener('DOMContentLoaded', () => {
+    audio.volume = 1.0;
+    audio.play().catch(error => {
+        console.log('Autoplay bloqueado, esperando interacción del usuario...');
+    });
+
+    
+    setTimeout(() => {
+        audio.play();
+    }, 1000);
+});
+
+
 setInterval(() => {
     showPopup();
 }, 1000);
